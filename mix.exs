@@ -7,7 +7,24 @@ defmodule FeishuSheet.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      # Hex pkg
+      description: "Utils to operate Feishu Sheets.",
+      package: package()
+    ]
+  end
+
+  defp package() do
+    [
+      name: "feishu_sheet",
+      links: %{
+        "GitHub" => "https://github.com/cao7113/feishu-sheet"
+      },
+      source_url: "https://github.com/cao7113/feishu-sheet",
+      home_url: "https://github.com/cao7113/feishu-sheet",
+      # files:
+      #   ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE* license* CHANGELOG* changelog* src),
+      licenses: ["Apache-2.0"]
     ]
   end
 
